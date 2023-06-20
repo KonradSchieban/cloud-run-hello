@@ -1,7 +1,7 @@
 steps:
 
 - id: 'Build Container Image'
-- name: 'gcr.io/cloud-builders/docker:latest'
+  name: 'gcr.io/cloud-builders/docker:latest'
   args: [ 'build', '-t', 'europe-west3-docker.pkg.dev/${PROJECT_ID}/kschieban-reg/cloud-run-hello:${SHORT_SHA}', '.' ]
 
 
